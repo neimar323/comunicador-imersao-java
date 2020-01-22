@@ -37,5 +37,20 @@ public class Mensagem {
         this.usuario = usuario;
     }
 
+    @Override
+    public String toString() {
+        return "Mensagem{" +
+                "texto='" + texto + '\'' +
+                ", dataHora=" + dataHora +
+                ", usuario=" + usuario +
+                '}';
+    }
 
+    public String descricao() {
+        return "Mensagem{" +
+                "texto='" + texto + '\'' +
+                ", dataHora=" + dataHora +
+                ", usuario=" + usuario +
+                '}';
+    }
 }

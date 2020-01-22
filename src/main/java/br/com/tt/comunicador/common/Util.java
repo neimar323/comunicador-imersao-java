@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class Util {
     final static public DateTimeFormatter FORMATO = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    final static public int TAMANHO_MENSAGEM_MINIMO = 5;
 
     private Util(){
         //nada nao maluco
@@ -19,7 +20,11 @@ public class Util {
     public static String entraComAInformacaoAewManolo() {
 //        Scanner sc = new Scanner(System.in);
 //        return sc.next();
-        return JOptionPane.showInputDialog("");
+        String ret = JOptionPane.showInputDialog("");
+        if(ret == null){
+            ret = "";
+        }
+        return ret;
 
     }
 }

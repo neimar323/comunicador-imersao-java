@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ab19ece-6bad-4a7c-8e83-ec6ea02d39a6" name="Default Changelist" comment="" />
+    <list default="true" id="7ab19ece-6bad-4a7c-8e83-ec6ea02d39a6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/common/ComunicadorException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/common/MensagemTamanhoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/common/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/common/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/model/Mensagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/model/Mensagem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/model/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/tela/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/tela/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/tt/comunicador/common/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/tt/comunicador/common/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/tt/comunicador/model/Mensagem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/tt/comunicador/model/Mensagem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/tt/comunicador/model/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/tt/comunicador/model/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/tt/comunicador/tela/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/tt/comunicador/tela/Main.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="201" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -13,6 +29,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -22,6 +41,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1WgDz7lmttJdia8yx1GoGsn1lkO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,6 +49,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -78,30 +99,34 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="312" y="87" key="#Project_Structure/0.0.1440.860@0.0.1440.860" timestamp="1579562683586" />
-    <state x="525" y="105" key="#com.intellij.ide.util.MemberChooser" timestamp="1579563863418">
+    <state x="525" y="105" key="#com.intellij.ide.util.MemberChooser" timestamp="1579646240612">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="525" y="105" key="#com.intellij.ide.util.MemberChooser/0.0.1440.860@0.0.1440.860" timestamp="1579563863418" />
+    <state x="525" y="105" key="#com.intellij.ide.util.MemberChooser/0.0.1440.860@0.0.1440.860" timestamp="1579646240612" />
     <state x="298" y="305" width="490" height="555" key="#xdebugger.evaluate" timestamp="1579569585263">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="298" y="305" width="490" height="555" key="#xdebugger.evaluate/0.0.1440.860@0.0.1440.860" timestamp="1579569585263" />
-    <state width="1396" height="275" key="GridCell.Tab.0.bottom" timestamp="1579570899246">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="697" height="209" key="GridCell.Tab.0.bottom" timestamp="1579652503553">
+      <screen x="0" y="0" width="1440" height="852" />
     </state>
-    <state width="1396" height="275" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1579570899246" />
-    <state width="1396" height="275" key="GridCell.Tab.0.center" timestamp="1579570899246">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="697" height="209" key="GridCell.Tab.0.bottom/0.0.1440.852@0.0.1440.852" timestamp="1579652503553" />
+    <state width="697" height="107" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1579651315808" />
+    <state width="697" height="209" key="GridCell.Tab.0.center" timestamp="1579652503553">
+      <screen x="0" y="0" width="1440" height="852" />
     </state>
-    <state width="1396" height="275" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1579570899246" />
-    <state width="1396" height="275" key="GridCell.Tab.0.left" timestamp="1579570899246">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="697" height="209" key="GridCell.Tab.0.center/0.0.1440.852@0.0.1440.852" timestamp="1579652503553" />
+    <state width="697" height="107" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1579651315808" />
+    <state width="697" height="209" key="GridCell.Tab.0.left" timestamp="1579652503553">
+      <screen x="0" y="0" width="1440" height="852" />
     </state>
-    <state width="1396" height="275" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1579570899246" />
-    <state width="1396" height="275" key="GridCell.Tab.0.right" timestamp="1579570899246">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="697" height="209" key="GridCell.Tab.0.left/0.0.1440.852@0.0.1440.852" timestamp="1579652503553" />
+    <state width="697" height="107" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1579651315808" />
+    <state width="697" height="209" key="GridCell.Tab.0.right" timestamp="1579652503553">
+      <screen x="0" y="0" width="1440" height="852" />
     </state>
-    <state width="1396" height="275" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1579570899246" />
+    <state width="697" height="209" key="GridCell.Tab.0.right/0.0.1440.852@0.0.1440.852" timestamp="1579652503553" />
+    <state width="697" height="107" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1579651315808" />
     <state width="1396" height="234" key="GridCell.Tab.1.bottom" timestamp="1579569709497">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -126,5 +151,12 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="407" y="146" width="626" height="568" key="find.popup/0.0.1440.860@0.0.1440.860" timestamp="1579568983727" />
+    <state x="376" y="190" key="run.anything.popup" timestamp="1579645459071">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="376" y="190" key="run.anything.popup/0.0.1440.860@0.0.1440.860" timestamp="1579645459071" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/99Comunicador$Main.ic" NAME="Main Coverage Results" MODIFIED="1579647772293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

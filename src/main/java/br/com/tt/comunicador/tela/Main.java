@@ -1,5 +1,7 @@
 package br.com.tt.comunicador.tela;
 
+import br.com.tt.comunicador.common.ComunicadorException;
+import br.com.tt.comunicador.common.MensagemTamanhoException;
 import br.com.tt.comunicador.common.Util;
 import br.com.tt.comunicador.model.Mensagem;
 import br.com.tt.comunicador.model.Usuario;
@@ -13,10 +15,12 @@ class Main extends Object {
     public static ArrayList<Mensagem> mensagens = new ArrayList<>();
     public static Usuario usuarioLogado;
 
-    static public void main(String[] args) {
+    static public void main(String[] args) throws Exception {
         inicializarDados();
 
-        entrar();
+        if(!entrar()){
+            throw new ComunicadorException("erro ao logar");
+        }
         listaMalucos();
         novaMensagem();
         listarMensagens();
@@ -25,19 +29,21 @@ class Main extends Object {
 
     public static void listaMalucos(){
         Integer i = 0;
+        String texto = "";
         for(Usuario umUser:usuarios){
-            Util.printaAewPorGentiliza(i);
-            Util.printaAewPorGentiliza(umUser.getUsername());
+            texto += umUser.descricao();
+            texto += "\n";
             i++;
         }
+        Util.printaAewPorGentiliza(texto);
 
     }
 
     public static boolean entrar(){
-        Util.printaAewPorGentiliza("Informe seu username");
+        Util.printaAewPorGentiliza("Informe seu username (new) para novo usuario");
         String usernameDigitado = Util.entraComAInformacaoAewManolo();
 
-        if(usernameDigitado.equals("n")){
+        if(usernameDigitado.equals("new")){
             Util.printaAewPorGentiliza("What's ur name?");
             String nome = Util.entraComAInformacaoAewManolo();
             Util.printaAewPorGentiliza("What's ur USERname?");
@@ -59,6 +65,7 @@ class Main extends Object {
             }
         }
         Util.printaAewPorGentiliza("ERROUUU!!!!");
+
         return false;
     }
 
@@ -67,16 +74,34 @@ class Main extends Object {
         String quem = Util.entraComAInformacaoAewManolo();
         Util.printaAewPorGentiliza("Qq c qr falar?");
         String mensagem = Util.entraComAInformacaoAewManolo();
+
+        try {
+            verificaTamanhoDaMensagem(mensagem);
+        } catch (MensagemTamanhoException e) {
+            Util.printaAewPorGentiliza(e.getMessage());
+            novaMensagem();
+            return;
+        }
+
         Mensagem msg = new Mensagem();
         msg.setTexto(mensagem);
         msg.setUsuario(usuarios.get(Integer.parseInt(quem)));
         mensagens.add(msg);
     }
-    public static void listarMensagens(){
-        for(Mensagem msg : mensagens){
-            Util.printaAewPorGentiliza(msg.getDataHora());
-            Util.printaAewPorGentiliza(msg.getTexto());
+
+    private static void verificaTamanhoDaMensagem(String mensagem) throws MensagemTamanhoException {
+        if(mensagem.length() < Util.TAMANHO_MENSAGEM_MINIMO){
+            throw new MensagemTamanhoException();
         }
+    }
+
+    public static void listarMensagens(){
+        String texto = "";
+        for(Mensagem msg : mensagens){
+            texto += msg.descricao();
+            texto += "\n";
+        }
+        Util.printaAewPorGentiliza(texto);
 
     }
 
