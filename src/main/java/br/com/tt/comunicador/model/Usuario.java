@@ -4,7 +4,6 @@ import br.com.tt.comunicador.common.Util;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import static java.time.temporal.ChronoUnit.DAYS;
 import static java.time.temporal.ChronoUnit.YEARS;
 
 public class Usuario {

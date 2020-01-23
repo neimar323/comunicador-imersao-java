@@ -8,16 +8,16 @@ public class Util {
     final static public DateTimeFormatter FORMATO = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     final static public int TAMANHO_MENSAGEM_MINIMO = 5;
 
-    private Util(){
+    public Util(){
         //nada nao maluco
     }
 
-    public static void printaAewPorGentiliza(Object qualquerCoisa){
+    public void printaAewPorGentiliza(Object qualquerCoisa){
         JOptionPane.showMessageDialog(null,qualquerCoisa.toString());
         System.out.println(qualquerCoisa);
     }
 
-    public static String entraComAInformacaoAewManolo() {
+    public String entraComAInformacaoAewManolo() {
 //        Scanner sc = new Scanner(System.in);
 //        return sc.next();
         String ret = JOptionPane.showInputDialog("");
