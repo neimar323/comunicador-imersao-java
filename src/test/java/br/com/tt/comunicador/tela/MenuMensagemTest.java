@@ -11,6 +11,7 @@ import org.mockito.invocation.InvocationOnMock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.mockito.stubbing.Answer;
 
+import java.awt.*;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -59,16 +60,6 @@ class MenuMensagemTest {
     }
 
 
-
-//    public void listarMensagens(){
-//        String texto = "";
-//        for(Mensagem msg : mensagens){
-//            texto += msg.descricao();
-//            texto += "\n";
-//        }
-//        util.printaAewPorGentileza(texto);
-//    }
-
     @Test
     void listarMensagens() {
         ArrayList<Mensagem> mensagens = new ArrayList<>();
@@ -90,7 +81,36 @@ class MenuMensagemTest {
 
     }
 
+
+    String textListaMalucos = "";
     @Test
     void listaMalucos() {
+        Usuario user1 = new Usuario("Neimar", "neimar", "18/01/1991", "RS");
+        Usuario user2 = new Usuario("asd", "asd", "18/01/1991", "SC");
+        ArrayList<Usuario> usuarios = new ArrayList<>();
+
+        usuarios.add(user1);
+        usuarios.add(user2);
+
+        MenuMensagem menuMensagem = new MenuMensagem(util, usuarios, null);
+
+        Mockito.doAnswer(new Answer<Void>() {
+            public Void answer(InvocationOnMock invocation) {
+
+                Object[] args = invocation.getArguments();
+                for(int i = 0; i < args.length; i++){
+                    String argsString = (String) args[0];
+                    textListaMalucos+= argsString;
+                }
+                return null;
+            }
+        }).when(util).printaAewPorGentiliza(Mockito.anyString());
+
+        menuMensagem.listaMalucos();
+
+        String msgEsperada = "Usuario{username='neimar', nome='Neimar', nascimento=1991-01-18', idade =29', estado =Rio Grande do Sul'}"
+            +"\nUsuario{username='asd', nome='asd', nascimento=1991-01-18', idade =29', estado =Santa Catarina'}\n";
+        assertEquals(msgEsperada, textListaMalucos);
+
     }
 }

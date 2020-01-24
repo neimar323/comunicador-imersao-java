@@ -1,5 +1,6 @@
 package br.com.tt.comunicador.tela;
 import br.com.tt.comunicador.common.Util;
+import br.com.tt.comunicador.model.EstadoEnum;
 import br.com.tt.comunicador.model.Usuario;
 import java.util.ArrayList;
 
@@ -12,7 +13,7 @@ public class MenuEntrar {
         this.usuarios = usuarios;
     }
 
-    public Usuario entrar(){
+    public Usuario entrar() throws EstadoInexistenteException {
         util.printaAewPorGentiliza("Informe seu username (new) para novo usuario");
         String usernameDigitado = util.entraComAInformacaoAewManolo();
 
@@ -26,6 +27,11 @@ public class MenuEntrar {
             util.printaAewPorGentiliza("When u was born? (dd/mm/yyyy)");
             String dataNascimento = util.entraComAInformacaoAewManolo();
 
+            try {
+                EstadoEnum estadoEnum = EstadoEnum.valueOf(estado);
+            }catch (IllegalArgumentException e){
+                throw new EstadoInexistenteException("Estado inexistente: "+estado);
+            }
 
             Usuario novoUsuario = new Usuario(nome, userName, dataNascimento, estado);
             usuarios.add(novoUsuario);

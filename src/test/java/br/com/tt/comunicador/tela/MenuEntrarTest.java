@@ -1,7 +1,7 @@
 package br.com.tt.comunicador.tela;
 
 import br.com.tt.comunicador.common.Util;
-import br.com.tt.comunicador.model.ESTADO;
+import br.com.tt.comunicador.model.EstadoEnum;
 import br.com.tt.comunicador.model.Usuario;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -9,7 +9,6 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import javax.security.auth.login.LoginException;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
@@ -23,7 +22,7 @@ class MenuEntrarTest {
     Util util;
 
     @Test
-    void deveriaEntrar(){
+    void deveriaEntrar() throws EstadoInexistenteException {
         //given
         Mockito.when(util.entraComAInformacaoAewManolo())
                 .thenReturn("new")
@@ -43,7 +42,7 @@ class MenuEntrarTest {
         assertEquals("neimar", usuarioTest.getNome());
         assertEquals("neimarUser", usuarioTest.getUsername());
         assertEquals(LocalDate.of(1991, 1, 18), usuarioTest.getNascimento());
-        assertEquals(ESTADO.RS, usuarioTest.getEstado());
+        assertEquals(EstadoEnum.RS, usuarioTest.getEstado());
 
         Mockito.verify(util, Mockito.times(5)).entraComAInformacaoAewManolo();
 
@@ -96,6 +95,3 @@ class MenuEntrarTest {
     }
 
 }
-
-    Set your username: git config --global user.name "Neimar Braga"
-        Set your email address: git config --global user.email "neimar_bbraga@hotmail.com"

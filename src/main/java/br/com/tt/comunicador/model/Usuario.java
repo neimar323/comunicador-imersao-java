@@ -9,13 +9,13 @@ public class Usuario {
     private String username;
     private String nome;
     private LocalDate nascimento;
-    private ESTADO estado;
+    private EstadoEnum estado;
 
     public Usuario(String nome, String userName, String dataNascimento, String estado) {
         this.setNome(nome);
         this.setUsername(userName);
         this.nascimento = LocalDate.parse(dataNascimento, Util.FORMATO);
-        this.estado = ESTADO.valueOf(estado);;
+        this.estado = EstadoEnum.valueOf(estado);;
     }
 
     public Usuario() {
@@ -67,14 +67,15 @@ public class Usuario {
                 "username='" + username + '\'' +
                 ", nome='" + nome + '\'' +
                 ", nascimento=" + nascimento + '\'' +
-                ", idade =" + this.idade() +
+                ", idade =" + this.idade() + '\'' +
+                ", estado =" + this.getEstado().getDescricao() + '\'' +
                 '}';
     }
-    public void setEstado(ESTADO estado) {
+    public void setEstado(EstadoEnum estado) {
         this.estado = estado;
     }
 
-    public ESTADO getEstado() {
+    public EstadoEnum getEstado() {
         return this.estado;
     }
 

@@ -20,7 +20,7 @@ public class Main extends Object {
         DadosIniciais.criaCargaInicial(usuarios);
         usuarioLogado = menuEntrar.entrar();
         if(null == usuarioLogado){
-            throw new ComunicadorException("erro ao logar");
+            throw new ComunicadorException("Erro ao logar");
         }
         menuMain();
     }
