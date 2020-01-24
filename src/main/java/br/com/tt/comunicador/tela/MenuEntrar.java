@@ -21,10 +21,13 @@ public class MenuEntrar {
             String nome = util.entraComAInformacaoAewManolo();
             util.printaAewPorGentiliza("What's ur USERname?");
             String userName = util.entraComAInformacaoAewManolo();
+            util.printaAewPorGentiliza("Qual seu estado?");
+            String estado = util.entraComAInformacaoAewManolo();
             util.printaAewPorGentiliza("When u was born? (dd/mm/yyyy)");
             String dataNascimento = util.entraComAInformacaoAewManolo();
 
-            Usuario novoUsuario = new Usuario(nome, userName, dataNascimento);
+
+            Usuario novoUsuario = new Usuario(nome, userName, dataNascimento, estado);
             usuarios.add(novoUsuario);
             return novoUsuario;
         }

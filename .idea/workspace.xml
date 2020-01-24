@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ab19ece-6bad-4a7c-8e83-ec6ea02d39a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/tela/DadosIniciais.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/tela/MenuEntrar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/tela/MenuMensagem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/tt/comunicador/model/UsuarioTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/tt/comunicador/tela/MenuEntrarTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/model/ESTADO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/tt/comunicador/tela/MenuMensagemTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/common/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/common/Util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/model/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/tela/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/tela/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/tt/comunicador/common/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/tt/comunicador/common/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/tela/MenuEntrar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/tela/MenuEntrar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/tt/comunicador/tela/MenuEntrarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/tt/comunicador/tela/MenuEntrarTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/br/com/tt/comunicador/model/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/tt/comunicador/model/Usuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/tt/comunicador/tela/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/tt/comunicador/tela/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/tt/comunicador/tela/MenuEntrar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/tt/comunicador/tela/MenuEntrar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/tt/comunicador/tela/MenuEntrarTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/br/com/tt/comunicador/tela/MenuEntrarTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -62,15 +58,31 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="br.com.tt.comunicador.model" />
       <recent name="br.com.tt.comunicador.tela" />
+      <recent name="br.com.tt.comunicador.model" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.tt.comunicador.model" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.MenuEntrarTest.deveriaEntrar">
-    <configuration name="MenuEntrarTest.deveriaDarErro" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MenuEntrarTest.deveriaDarErroNoEstado">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.tt.comunicador.tela.Main" />
+      <module name="99Comunicador" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.tt.comunicador.tela.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MenuEntrarTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="99Comunicador" />
       <extension name="coverage">
         <pattern>
@@ -80,13 +92,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="br.com.tt.comunicador.tela" />
       <option name="MAIN_CLASS_NAME" value="br.com.tt.comunicador.tela.MenuEntrarTest" />
-      <option name="METHOD_NAME" value="deveriaDarErro" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MenuEntrarTest.deveriaDarErroNaData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MenuEntrarTest.deveriaDarErroNoEstado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="99Comunicador" />
       <extension name="coverage">
         <pattern>
@@ -96,13 +107,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="br.com.tt.comunicador.tela" />
       <option name="MAIN_CLASS_NAME" value="br.com.tt.comunicador.tela.MenuEntrarTest" />
-      <option name="METHOD_NAME" value="deveriaDarErroNaData" />
+      <option name="METHOD_NAME" value="deveriaDarErroNoEstado" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MenuEntrarTest.deveriaEntrar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MenuMensagemTest.deveriaDarerroNaPrimeiraEntrada" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="99Comunicador" />
       <extension name="coverage">
         <pattern>
@@ -111,14 +122,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="br.com.tt.comunicador.tela" />
-      <option name="MAIN_CLASS_NAME" value="br.com.tt.comunicador.tela.MenuEntrarTest" />
-      <option name="METHOD_NAME" value="deveriaEntrar" />
+      <option name="MAIN_CLASS_NAME" value="br.com.tt.comunicador.tela.MenuMensagemTest" />
+      <option name="METHOD_NAME" value="deveriaDarerroNaPrimeiraEntrada" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MenuEntrarTest.deveriaSerIgualA3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MenuMensagemTest.listarMensagens" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="99Comunicador" />
       <extension name="coverage">
         <pattern>
@@ -127,24 +138,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="br.com.tt.comunicador.tela" />
-      <option name="MAIN_CLASS_NAME" value="br.com.tt.comunicador.tela.MenuEntrarTest" />
-      <option name="METHOD_NAME" value="deveriaSerIgualA3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UsuarioTest.deveriaRetornarAIdade" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="99Comunicador" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.tt.comunicador.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.tt.comunicador.model" />
-      <option name="MAIN_CLASS_NAME" value="br.com.tt.comunicador.model.UsuarioTest" />
-      <option name="METHOD_NAME" value="deveriaRetornarAIdade" />
+      <option name="MAIN_CLASS_NAME" value="br.com.tt.comunicador.tela.MenuMensagemTest" />
+      <option name="METHOD_NAME" value="listarMensagens" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MenuEntrarTest.deveriaEntrar" />
-        <item itemvalue="JUnit.MenuEntrarTest.deveriaDarErroNaData" />
-        <item itemvalue="JUnit.MenuEntrarTest.deveriaDarErro" />
-        <item itemvalue="JUnit.UsuarioTest.deveriaRetornarAIdade" />
-        <item itemvalue="JUnit.MenuEntrarTest.deveriaSerIgualA3" />
+        <item itemvalue="JUnit.MenuEntrarTest.deveriaDarErroNoEstado" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MenuEntrarTest" />
+        <item itemvalue="JUnit.MenuMensagemTest.listarMensagens" />
+        <item itemvalue="JUnit.MenuMensagemTest.deveriaDarerroNaPrimeiraEntrada" />
       </list>
     </recent_temporary>
   </component>
@@ -198,46 +193,46 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="525" y="105" key="#com.intellij.ide.util.MemberChooser/0.0.1440.860@0.0.1440.860" timestamp="1579646240612" />
-    <state x="556" y="132" width="490" height="555" key="#xdebugger.evaluate" timestamp="1579743338103">
+    <state x="582" y="284" width="490" height="491" key="#xdebugger.evaluate" timestamp="1579826622607">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="556" y="132" width="490" height="555" key="#xdebugger.evaluate/0.0.1440.860@0.0.1440.860" timestamp="1579743338103" />
-    <state width="697" height="234" key="GridCell.Tab.0.bottom" timestamp="1579743363056">
+    <state x="582" y="284" width="490" height="491" key="#xdebugger.evaluate/0.0.1440.860@0.0.1440.860" timestamp="1579826622607" />
+    <state width="967" height="184" key="GridCell.Tab.0.bottom" timestamp="1579826698098">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="697" height="209" key="GridCell.Tab.0.bottom/0.0.1440.852@0.0.1440.852" timestamp="1579657401947" />
-    <state width="697" height="234" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1579743363056" />
-    <state width="697" height="234" key="GridCell.Tab.0.center" timestamp="1579743363056">
+    <state width="967" height="184" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1579826698098" />
+    <state width="967" height="184" key="GridCell.Tab.0.center" timestamp="1579826698097">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="697" height="209" key="GridCell.Tab.0.center/0.0.1440.852@0.0.1440.852" timestamp="1579657401946" />
-    <state width="697" height="234" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1579743363056" />
-    <state width="697" height="234" key="GridCell.Tab.0.left" timestamp="1579743363056">
+    <state width="967" height="184" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1579826698097" />
+    <state width="967" height="184" key="GridCell.Tab.0.left" timestamp="1579826698097">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="697" height="209" key="GridCell.Tab.0.left/0.0.1440.852@0.0.1440.852" timestamp="1579657401946" />
-    <state width="697" height="234" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1579743363056" />
-    <state width="697" height="234" key="GridCell.Tab.0.right" timestamp="1579743363056">
+    <state width="967" height="184" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1579826698097" />
+    <state width="967" height="184" key="GridCell.Tab.0.right" timestamp="1579826698098">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="697" height="209" key="GridCell.Tab.0.right/0.0.1440.852@0.0.1440.852" timestamp="1579657401947" />
-    <state width="697" height="234" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1579743363056" />
-    <state width="697" height="234" key="GridCell.Tab.1.bottom" timestamp="1579743363056">
+    <state width="967" height="184" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1579826698098" />
+    <state width="697" height="234" key="GridCell.Tab.1.bottom" timestamp="1579826659618">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="697" height="234" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1579743363056" />
-    <state width="697" height="234" key="GridCell.Tab.1.center" timestamp="1579743363056">
+    <state width="697" height="234" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1579826659618" />
+    <state width="697" height="234" key="GridCell.Tab.1.center" timestamp="1579826659618">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="697" height="234" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1579743363056" />
-    <state width="697" height="234" key="GridCell.Tab.1.left" timestamp="1579743363056">
+    <state width="697" height="234" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1579826659618" />
+    <state width="697" height="234" key="GridCell.Tab.1.left" timestamp="1579826659618">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="697" height="234" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1579743363056" />
-    <state width="697" height="234" key="GridCell.Tab.1.right" timestamp="1579743363056">
+    <state width="697" height="234" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1579826659618" />
+    <state width="697" height="234" key="GridCell.Tab.1.right" timestamp="1579826659618">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="697" height="234" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1579743363056" />
+    <state width="697" height="234" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1579826659618" />
     <state x="264" y="7" width="1040" height="846" key="SettingsEditor" timestamp="1579563525495">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -246,19 +241,23 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="527" y="341" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.860@0.0.1440.860" timestamp="1579735237709" />
-    <state x="491" y="105" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1579740114098">
+    <state x="491" y="105" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1579817474377">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="491" y="105" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1440.860@0.0.1440.860" timestamp="1579740114098" />
+    <state x="491" y="105" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1440.860@0.0.1440.860" timestamp="1579817474377" />
     <state x="450" y="174" key="extract.method.dialog" timestamp="1579731730069">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="450" y="174" key="extract.method.dialog/0.0.1440.860@0.0.1440.860" timestamp="1579731730069" />
-    <state x="407" y="145" width="626" height="568" key="find.popup" timestamp="1579656200878">
-      <screen x="0" y="0" width="1440" height="852" />
+    <state x="407" y="146" width="626" height="568" key="find.popup" timestamp="1579826326864">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="407" y="145" width="626" height="568" key="find.popup/0.0.1440.852@0.0.1440.852" timestamp="1579656200878" />
-    <state x="407" y="146" width="626" height="568" key="find.popup/0.0.1440.860@0.0.1440.860" timestamp="1579568983727" />
+    <state x="407" y="146" width="626" height="568" key="find.popup/0.0.1440.860@0.0.1440.860" timestamp="1579826326864" />
+    <state x="361" y="145" width="700" height="530" key="recent.locations.popup" timestamp="1579817747316">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="361" y="145" width="700" height="530" key="recent.locations.popup/0.0.1440.860@0.0.1440.860" timestamp="1579817747316" />
     <state x="376" y="190" key="run.anything.popup" timestamp="1579739438524">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -267,17 +266,6 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="383" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1579731619276" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/tt/comunicador/tela/MenuEntrar.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/99Comunicador$Main.ic" NAME="Main Coverage Results" MODIFIED="1579647772293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

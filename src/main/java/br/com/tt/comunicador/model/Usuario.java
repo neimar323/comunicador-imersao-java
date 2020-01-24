@@ -3,18 +3,19 @@ package br.com.tt.comunicador.model;
 import br.com.tt.comunicador.common.Util;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import static java.time.temporal.ChronoUnit.YEARS;
 
 public class Usuario {
     private String username;
     private String nome;
     private LocalDate nascimento;
+    private ESTADO estado;
 
-    public Usuario(String nome, String userName, String dataNascimento) {
+    public Usuario(String nome, String userName, String dataNascimento, String estado) {
         this.setNome(nome);
         this.setUsername(userName);
         this.nascimento = LocalDate.parse(dataNascimento, Util.FORMATO);
+        this.estado = ESTADO.valueOf(estado);;
     }
 
     public Usuario() {
@@ -69,4 +70,12 @@ public class Usuario {
                 ", idade =" + this.idade() +
                 '}';
     }
+    public void setEstado(ESTADO estado) {
+        this.estado = estado;
+    }
+
+    public ESTADO getEstado() {
+        return this.estado;
+    }
+
 }
